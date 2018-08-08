@@ -1,0 +1,30 @@
+{  
+   "AWSTemplateFormatVersion":"2010-09-09",
+   "Description":"Ec2 Instance Creation",
+   "Parameters":{  
+      "InstanceType":{  
+         "Default":"t2.micro",
+         "Description":"Size of instance",
+         "Type":"String"
+      }
+   },
+   "Resources":{  
+      "Ec2Instance":{  
+         "Properties ":{  
+            "ImageId":"ami-xxxxxx",
+            "InstanceType":{  
+               "Ref":"InstanceType"
+            }
+         },
+         "Type":"AWS::EC2::Instance"
+      }
+   },
+   "Outputs":{  
+      "InstanceId":{  
+         "Description":"Instance of newly created instance",
+         "Value":{  
+            "Ref":"Ec2Instance"
+         }
+      }
+   }
+}
