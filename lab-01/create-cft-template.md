@@ -16,4 +16,6 @@ Go to AWS console-> Services -> EC2 -> Key Pairs -> Create key pair -> Provide K
 
 **Step 5:** Download the wwc-demo template from http://bit.ly/wwc-dw
 
-**Step 6:** Update Security Groups, Subnets, S3 bucket, sns topic parameters in the template based on your individual aws account
+**Step 6:** Update Security Groups, Subnets, S3 bucket, sns topic parameters in the template 
+
+Each individual AWS account will have a unique set of values. Update the template based on the values in your account (Security Groups, subnets) or in some cases (S3, SNS, Key pair) based on the ones you've created in the previous steps.
